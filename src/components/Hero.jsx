@@ -43,10 +43,10 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-stretch gap-6">
             <a
               href="#projects"
-              className="group relative flex-1 min-w-0 px-8 py-4 bg-transparent overflow-hidden rounded-lg"
+              className="group relative flex-1 min-w-0 overflow-hidden rounded-lg border border-electricBlue bg-transparent px-8 py-4 flex items-center justify-center gap-2 text-electricBlue font-semibold tracking-wide"
             >
               <div className="absolute inset-0 w-0 bg-electricBlue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span className="relative text-electricBlue group-hover:text-backgroundPrimary font-semibold tracking-wide flex items-center justify-center gap-2 border border-electricBlue rounded-lg px-8 py-4 absolute inset-0">
+              <span className="relative flex items-center justify-center gap-2">
                 <Terminal size={20} />
                 Explore Projects
               </span>
