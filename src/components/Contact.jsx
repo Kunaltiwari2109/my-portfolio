@@ -4,7 +4,8 @@ import { Github, Linkedin, Twitter, Instagram, Send, Mail } from "lucide-react";
 const Contact = () => {
   const [status, setStatus] = useState("");
 
-  const apiBaseUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const apiBaseUrl = import.meta.env.VITE_API_URL || "";
+  const apiUrl = apiBaseUrl ? `${apiBaseUrl}/api/contact` : "/api/contact";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,7 +14,7 @@ const Contact = () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch(`${apiBaseUrl}/api/contact`, {
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

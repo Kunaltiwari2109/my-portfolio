@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm run build && node server.js",
     "serve": "node server.js",
-    "dev": "vite --host",
-    "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
+    "dev": "concurrently \"npm run server\" \"vite --host\"",
+    "dev:all": "npm run dev",
     "server": "node server.js",
     "build": "vite build",
     "build:gh": "cross-env VITE_BASE_URL=/my-portfolio/ npm run build",
