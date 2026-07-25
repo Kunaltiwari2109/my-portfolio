@@ -40,7 +40,7 @@ const Hero = () => {
             engineering. MERN stack learner, UI motion enthusiast.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-8">
             <a
               href="#projects"
               className="group relative w-full max-w-[13.5rem] md:max-w-[15.25rem] overflow-hidden rounded-lg border border-electricBlue bg-transparent px-6 py-3 flex items-center justify-center gap-2 text-electricBlue font-semibold tracking-wide"
