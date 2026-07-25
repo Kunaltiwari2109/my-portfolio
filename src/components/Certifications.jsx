@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "../utils/animations";
 import { Award } from "lucide-react";
 
 const baseUrl = import.meta.env.BASE_URL || "/";
@@ -27,32 +25,19 @@ const Certifications = () => {
   return (
     <section id="certifications" className="py-24 relative">
       <div className="container mx-auto px-6">
-        <motion.div
-          className="flex items-center gap-4 mb-16"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={fadeIn("right")}
-        >
+        <div className="flex items-center gap-4 mb-16">
           <Award className="text-electricBlue" size={40} />
           <h2 className="text-3xl md:text-4xl font-bold">Certifications</h2>
           <div className="h-[1px] flex-grow bg-gradient-to-r from-electricBlue/50 to-transparent ml-4"></div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={staggerContainer(0.2)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificates.map((cert, index) => (
-            <motion.a
+            <a
               key={index}
               href={cert.link}
               target="_blank"
               rel="noreferrer"
-              variants={fadeIn("up", index * 0.1)}
               className="group relative rounded-2xl p-1 glassmorphism overflow-hidden cursor-pointer block"
             >
               {/* Holographic Border Effect */}
@@ -93,9 +78,9 @@ const Certifications = () => {
                   Issued: {cert.date}
                 </div>
               </div>
-            </motion.a>
+            </a>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

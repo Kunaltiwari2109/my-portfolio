@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/animations";
 import { Github, Linkedin, Twitter, Instagram, Send, Mail } from "lucide-react";
 
 const Contact = () => {
@@ -41,13 +39,7 @@ const Contact = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[400px] bg-electricBlue/10 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <motion.div
-          className="text-center mb-16"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={fadeIn("up")}
-        >
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-electricBlue to-neonPurple">
               Connect With Me
@@ -56,17 +48,11 @@ const Contact = () => {
           <p className="text-textSecondary">
             Let's build something extraordinary together.
           </p>
-        </motion.div>
+        </div>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-5 gap-12 glassmorphism rounded-3xl p-8 md:p-12 border border-white/10 shadow-[0_0_50px_rgba(0,245,255,0.05)]">
           {/* Contact Info & Socials */}
-          <motion.div
-            className="md:col-span-2 space-y-8"
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            variants={fadeIn("right", 0.2)}
-          >
+          <div className="md:col-span-2 space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 Get in Touch
@@ -122,16 +108,10 @@ const Contact = () => {
                 })}
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Contact Form */}
-          <motion.div
-            className="md:col-span-3"
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            variants={fadeIn("left", 0.4)}
-          >
+          <div className="md:col-span-3">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="relative group">
@@ -208,7 +188,7 @@ const Contact = () => {
                 )}
               </div>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
