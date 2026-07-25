@@ -46,7 +46,7 @@ const Hero = () => {
               className="group relative w-full max-w-[13.5rem] md:max-w-[15.25rem] overflow-hidden rounded-lg border border-electricBlue bg-transparent px-6 py-3 flex items-center justify-center gap-2 text-electricBlue font-semibold tracking-wide"
             >
               <div className="absolute inset-0 w-0 bg-electricBlue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span className="relative flex items-center justify-center gap-2">
+              <span className="relative text-electricBlue group-hover:text-black flex items-center justify-center gap-2">
                 <Terminal size={20} />
                 Explore Projects
               </span>
