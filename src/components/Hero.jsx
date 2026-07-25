@@ -40,13 +40,13 @@ const Hero = () => {
             engineering. MERN stack learner, UI motion enthusiast.
           </p>
 
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-col sm:flex-row items-stretch gap-6">
             <a
               href="#projects"
-              className="group relative px-8 py-4 bg-transparent overflow-hidden rounded-lg"
+              className="group relative w-full sm:w-auto px-8 py-4 bg-transparent overflow-hidden rounded-lg"
             >
               <div className="absolute inset-0 w-0 bg-electricBlue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span className="relative text-electricBlue group-hover:text-backgroundPrimary font-semibold tracking-wide flex items-center gap-2 border border-electricBlue rounded-lg px-8 py-4 absolute inset-0">
+              <span className="relative text-electricBlue group-hover:text-backgroundPrimary font-semibold tracking-wide flex items-center justify-center gap-2 border border-electricBlue rounded-lg px-8 py-4 absolute inset-0">
                 <Terminal size={20} />
                 Explore Projects
               </span>
@@ -56,7 +56,7 @@ const Hero = () => {
               href={`${import.meta.env.BASE_URL}Kunal-Resume.pdf`}
               target="_blank"
               rel="noreferrer"
-              className="group relative px-8 py-4 rounded-lg glassmorphism border-glow hover:bg-white/10 transition-colors flex items-center gap-2 text-white font-semibold tracking-wide"
+              className="group relative w-full sm:w-auto px-8 py-4 rounded-lg glassmorphism border-glow hover:bg-white/10 transition-colors flex items-center justify-center gap-2 text-white font-semibold tracking-wide"
             >
               <Download
                 size={20}
