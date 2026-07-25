@@ -62,7 +62,7 @@ const Hero = () => {
                 size={20}
                 className="group-hover:text-neonPurple transition-colors"
               />
-              Download Resume
+              View Resume
             </a>
           </div>
         </div>
