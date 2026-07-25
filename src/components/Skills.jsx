@@ -1,7 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
-  SiOpenjdk,
   SiJunit5,
   SiApachemaven,
   SiExpress,
@@ -15,7 +14,7 @@ const skills = [
   { name: "HTML5", icon: FaHtml5, color: "#E34F26", level: 90 },
   { name: "CSS3", icon: FaCss3Alt, color: "#1572B6", level: 85 },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 80 },
-  { name: "Java", icon: SiOpenjdk, color: "#5382A1", level: 80 },
+  { name: "Java", icon: null, image: "/java-logo.svg", color: "#5382A1", level: 80 },
   { name: "JUnit 5", icon: SiJunit5, color: "#2C3E50", level: 70 },
   { name: "Maven", icon: SiApachemaven, color: "#C71A0F", level: 70 },
   { name: "React", icon: FaReact, color: "#61DAFB", level: 75 },
@@ -62,11 +61,19 @@ const Skills = () => {
                 {/* Hover Glow */}
                 <div className="absolute -inset-1 bg-gradient-to-t from-electricBlue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur"></div>
 
+                {skill.image ? (
+                <img
+                  src={skill.image}
+                  alt={skill.name}
+                  className="w-12 h-12 object-contain"
+                />
+              ) : (
                 <Icon
                   size={48}
                   style={{ color: skill.color }}
                   className="group-hover:scale-110 transition-transform duration-300 filter group-hover:brightness-125 group-hover:drop-shadow-[0_0_8px_currentColor]"
                 />
+              )}
 
                 <span className="font-medium text-textPrimary group-hover:text-white transition-colors">
                   {skill.name}
