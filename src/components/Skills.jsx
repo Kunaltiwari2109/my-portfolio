@@ -1,8 +1,8 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
-  SiJava,
-  SiJunit,
+  SiOpenjdk,
+  SiJunit5,
   SiApachemaven,
   SiExpress,
   SiMongodb,
@@ -15,8 +15,8 @@ const skills = [
   { name: "HTML5", icon: FaHtml5, color: "#E34F26", level: 90 },
   { name: "CSS3", icon: FaCss3Alt, color: "#1572B6", level: 85 },
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", level: 80 },
-  { name: "Java", icon: SiJava, color: "#5382A1", level: 80 },
-  { name: "JUnit 5", icon: SiJunit, color: "#2C3E50", level: 70 },
+  { name: "Java", icon: SiOpenjdk, color: "#5382A1", level: 80 },
+  { name: "JUnit 5", icon: SiJunit5, color: "#2C3E50", level: 70 },
   { name: "Maven", icon: SiApachemaven, color: "#C71A0F", level: 70 },
   { name: "React", icon: FaReact, color: "#61DAFB", level: 75 },
   { name: "Node.js", icon: FaNodeJs, color: "#339933", level: 70 },
