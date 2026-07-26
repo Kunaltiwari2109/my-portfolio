@@ -17,7 +17,7 @@ const skills = [
   {
     name: "Java",
     icon: null,
-    image: "/java-logo.svg",
+    image: "/java-logo.png",
     color: "#5382A1",
     level: 80,
   },
